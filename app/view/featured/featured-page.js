@@ -1,6 +1,6 @@
 const app = require("tns-core-modules/application");
 
-const FeaturedViewModel = require("./featured-view-model");
+const FeaturedViewModel = require("~/view/featured/featured-view-model");
 
 function onNavigatingTo(args) {
     const page = args.object;

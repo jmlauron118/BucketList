@@ -27,3 +27,26 @@
  ActionBar .action-bar-title {
      horizontal-align: center;
  }
+
+.action-bar{
+    // background-color: #36767e;
+    background: linear-gradient(180deg, rgba(54,118,126,0) 78%, rgba(62,122,129,0) 100%);
+}
+
+.page{
+    background: linear-gradient(180deg, rgba(54,118,126,1) 0%, rgba(246,218,207,1) 100%);
+}
+
+//Listview
+.lv-item{
+    margin: 5 15;
+    // border-top-right-radius: 5%;
+    // border-bottom-right-radius: 25%;
+    border-radius: 5%;
+    margin-right: 5;
+}
+
+.lv-text-normal {
+    font-size: 15;
+    font-family: "Roboto", "Roboto-Regular" !important;
+}

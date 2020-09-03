@@ -1,0 +1,24 @@
+<Page class="page" navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd" 
+    xmlns:lv="nativescript-ui-listview">
+    <ActionBar class="action-bar" flat="true">
+        <NavigationButton ios:visibility="collapsed" icon="res://menu" tap="onDrawerButtonTap"></NavigationButton>
+        <ActionItem icon="res://navigation/menu" android:visibility="collapsed" tap="onDrawerButtonTap" ios.position="left"></ActionItem>
+        <Label class="action-bar-title" text="Category"></Label>
+    </ActionBar>
+    <GridLayout>
+        <ScrollView orientation="vertical">
+            <lv:RadListView id="radCategory" items="{{ categoryData }}" height="100%" itemInsertAnimation="Slide" itemSwipeProgressStarted="onSwipeCellStarted" swipeActions="true">
+                <lv:RadListView.itemTemplate>
+                    <GridLayout class="lv-item" background="white" style="android-elevation: 2;" loaded="test">
+                        <StackLayout>
+                            <Label class="lv-text-normal" text="{{ CategoryName }}"></Label>
+                        </StackLayout>
+                    </GridLayout>
+                </lv:RadListView.itemTemplate>
+            </lv:RadListView>
+        </ScrollView>
+        <StackLayout verticalAlignment="bottom" horizontalAlignment="right">
+            <label class="float-btn fa" text="&#xf067;" androidElevation="2"></label>
+        </StackLayout>
+    </GridLayout>
+</Page>

@@ -1,10 +1,11 @@
+
 const app = require("tns-core-modules/application");
 
-const BrowseViewModel = require("./browse-view-model");
+const SettingsViewModel = require("~/view/settings/settings-view-model");
 
 function onNavigatingTo(args) {
     const page = args.object;
-    page.bindingContext = new BrowseViewModel();
+    page.bindingContext = new SettingsViewModel();
 }
 
 function onDrawerButtonTap(args) {

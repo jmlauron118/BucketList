@@ -94,7 +94,7 @@ module.exports = env => {
             hashSalt
         },
         resolve: {
-            extensions: [".js", ".scss", ".css"],
+            extensions: [".js", ".scss", ".css", ".sqlite"],
             // Resolve {N} system modules from tns-core-modules
             modules: [
                 resolve(__dirname, "node_modules/tns-core-modules"),
@@ -217,6 +217,9 @@ module.exports = env => {
                 { from: { glob: "fonts/**" } },
                 { from: { glob: "**/*.jpg" } },
                 { from: { glob: "**/*.png" } },
+                { from: { glob: "**/*.sqlite" } },           
+                { from: { glob: "**/*.db" } },
+                { from: { glob: "**/*.sql" } },
             ], { ignore: [`${relative(appPath, appResourcesFullPath)}/**`] }),
             new nsWebpack.GenerateNativeScriptEntryPointsPlugin("bundle"),
 

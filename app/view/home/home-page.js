@@ -1,10 +1,10 @@
 const app = require("tns-core-modules/application");
 
-const SearchViewModel = require("./search-view-model");
+const HomeViewModel = require("~/view/home/home-view-model");
 
 function onNavigatingTo(args) {
     const page = args.object;
-    page.bindingContext = new SearchViewModel();
+    page.bindingContext = new HomeViewModel();
 }
 
 function onDrawerButtonTap(args) {
