@@ -50,3 +50,64 @@
     font-size: 15;
     font-family: "Roboto", "Roboto-Regular" !important;
 }
+
+.title-label{
+    font-size: 18;
+    font-weight: bold;
+    font-family: "Roboto", "Roboto-Regular" !important;
+}
+///////////////
+.float-btn{
+    border-style: solid 1 white;
+    background-color: #36767e;
+    border-radius: 50%;  
+    text-align: center;
+    color: white;
+    font-size: 35;
+    padding-top: 20%;  
+    width: 75;
+    height: 75;
+    margin: 15;
+}
+
+////colors
+.default-color{
+    color: #36767e;
+}
+
+.c-white{
+    color: white;
+}
+
+.c-secondary{
+    color: rgba(246,218,207,1);
+}
+
+///font-size
+.bold{
+    font-weight: bold;
+}
+
+.l-normal{
+    font-size: 12;
+}
+
+.l-sm{
+    font-size: 10;
+}
+
+.l-xsm{
+    font-size: 8;
+}
+
+.l-m{
+    font-size: 18;
+}
+
+.l-lg{
+    font-size: 24;
+}
+
+.l-xlg{
+    font-size: 32;
+}

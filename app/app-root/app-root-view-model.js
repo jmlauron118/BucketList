@@ -1,11 +1,8 @@
-const observableModule = require("tns-core-modules/data/observable");
-
+const ObservableModule = require("tns-core-modules/data/observable").Observable;
 const SelectedPageService = require("../shared/selected-page-service");
 
 function AppRootViewModel() {
-    const viewModel = observableModule.fromObject({
-        selectedPage: ""
-    });
+    const viewModel = new ObservableModule();
 
     SelectedPageService.getInstance().selectedPage$
     .subscribe((selectedPage) => { viewModel.selectedPage = selectedPage; });

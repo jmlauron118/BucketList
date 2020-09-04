@@ -1,0 +1,27 @@
+<Page class="page" navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
+    <ActionBar class="action-bar" flat="true">
+        <NavigationButton ios:visibility="collapsed" icon="res://menu" tap="onDrawerButtonTap"></NavigationButton>
+        <ActionItem icon="res://navigation/menu" android:visibility="collapsed" tap="onDrawerButtonTap" ios.position="left"></ActionItem>
+        <Label class="action-bar-title" text="Icon"></Label>
+    </ActionBar>
+    <GridLayout class="page-content" rows="auto, *">
+        <StackLayout row="0" class="title-bg" orientation="vertical" verticalAlignment="center">
+            <Label class="title-label default-color" text="List of Icons"></Label>
+        </StackLayout>
+        <StackLayout row="1">
+            <StackLayout class="icon-container">
+                <ScrollView>
+                    <WrapLayout orientation="horizontal" horizontalAlignment="center" id="wrapLayout" height="100%">
+                        <!-- Icon List -->
+                        <!-- <StackLayout class="icon-box" orientation="vertical" verticalAlignment="center">
+                            <Label class="icon-label fa" text="&#xf091;"></Label>
+                        </StackLayout> -->
+                    </WrapLayout>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout rowSpan="2" verticalAlignment="bottom" horizontalAlignment="right" tap="onTapAddIcon">
+            <label class="float-btn fa" text="&#xf067;" androidElevation="2"></label>
+        </StackLayout>
+    </GridLayout>
+</Page>

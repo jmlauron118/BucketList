@@ -29,8 +29,9 @@ const storedProcedure = {
     },
     getData : function (pkgStoredProc,param) {
           // Get data as object array against SQLite database
-        return new Promise(function(resolve,reject) {                   
+        return new Promise(function(resolve,reject) {         
             let file =  appFolder.getFile(baseFolder + pkgStoredProc);
+
             file.readText().then(fileVal => {      
                 (new Sqlite(appSettings.database)).then(database => {
                     database.all(fileVal, param).then(rows => {  

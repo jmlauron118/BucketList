@@ -1,0 +1,16 @@
+<Page class="page" navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
+    <ActionBar class="action-bar" flat="true">
+        <NavigationButton ios:visibility="collapsed" icon="res://menu" tap="onDrawerButtonTap"></NavigationButton>
+        <ActionItem icon="res://navigation/menu" android:visibility="collapsed" tap="onDrawerButtonTap" ios.position="left"></ActionItem>
+        <Label class="action-bar-title" text="Icon"></Label>
+    </ActionBar>
+    <GridLayout class="page-content" rows="auto, *">
+        <StackLayout row="0" class="title-bg" orientation="vertical" verticalAlignment="center">
+            <Label class="title-label c-white" text="Total Icons"></Label>
+            <Label class="title-label c-white l-lg bold" text="0"></Label>
+        </StackLayout>
+        <StackLayout row="1" class="input-container">
+
+        </StackLayout>
+    </GridLayout>
+</Page>
