@@ -89,11 +89,11 @@
 }
 
 .l-normal{
-    font-size: 12;
+    font-size: 15;
 }
 
 .l-sm{
-    font-size: 10;
+    font-size: 12;
 }
 
 .l-xsm{
@@ -110,4 +110,34 @@
 
 .l-xlg{
     font-size: 32;
+}
+
+TextField{
+    border-bottom-width: 1;
+    border-color: #36767e;
+}
+
+//////button
+.btn-default{
+    background-color: #36767e;
+    color: white;
+    font-size: 18;
+    height: 55;
+}
+
+
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+}
+
+.fa-brands {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
 }

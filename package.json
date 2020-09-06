@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@nstudio/nativescript-snackbar": "^1.1.2",
+    "nativescript-feedback": "^1.5.0",
     "nativescript-sqlite": "^2.3.3",
     "nativescript-theme-core": "~1.0.6",
     "nativescript-ui-listview": "^8.0.1",

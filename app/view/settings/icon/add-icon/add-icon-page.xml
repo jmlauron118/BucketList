@@ -1,4 +1,5 @@
-<Page class="page" navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
+<Page class="page" loaded="onLoaded"
+    xmlns="http://schemas.nativescript.org/tns.xsd">
     <ActionBar class="action-bar" flat="true">
         <NavigationButton ios:visibility="collapsed" icon="res://menu" tap="onDrawerButtonTap"></NavigationButton>
         <ActionItem icon="res://navigation/menu" android:visibility="collapsed" tap="onDrawerButtonTap" ios.position="left"></ActionItem>
@@ -7,10 +8,16 @@
     <GridLayout class="page-content" rows="auto, *">
         <StackLayout row="0" class="title-bg" orientation="vertical" verticalAlignment="center">
             <Label class="title-label c-white" text="Total Icons"></Label>
-            <Label class="title-label c-white l-lg bold" text="0"></Label>
+            <Label class="title-label c-white l-lg bold" text="{{ IconTotal }}"></Label>
         </StackLayout>
-        <StackLayout row="1" class="input-container">
-
-        </StackLayout>
+        <GridLayout row="1" rows="*, auto" class="input-container">
+            <StackLayout row="0" class="tf-container" orientation="vertical">
+                <Label class="l-normal default-color" text="Icon Code (ex. f00d):"></Label>
+                <TextField id="txtCode" hint="Enter Icon Code" maxLength="4"></TextField>
+            </StackLayout>
+            <StackLayout row="1" orientation="vertical" verticalAlignment="bottom">
+                <Button class="btn-default" text="Add" tap="onTapAddButton"></Button>
+            </StackLayout>
+        </GridLayout>
     </GridLayout>
 </Page>

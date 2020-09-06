@@ -1,4 +1,4 @@
-<Page class="page" navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd" 
+<Page class="page" loaded="onLoaded" xmlns="http://schemas.nativescript.org/tns.xsd" 
     xmlns:lv="nativescript-ui-listview">
     <ActionBar class="action-bar" flat="true">
         <NavigationButton ios:visibility="collapsed" icon="res://menu" tap="onDrawerButtonTap"></NavigationButton>

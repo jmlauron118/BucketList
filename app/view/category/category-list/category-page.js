@@ -2,7 +2,7 @@ const app = require("tns-core-modules/application");
 const CategoryViewModel = require("./category-view-model");
 const RandColor = require("~/module/general");
 
-exports.onNavigatingTo = (args) => {
+exports.onLoaded = (args) => {
     const page = args.object;
     page.bindingContext = new CategoryViewModel();
 
@@ -15,6 +15,5 @@ exports.onDrawerButtonTap = (args) => {
 }
 
 exports.test = (args) =>{
-    
     console.log(`Loaded! Color: ${RandColor.GetRandomColor()}`);
 };
